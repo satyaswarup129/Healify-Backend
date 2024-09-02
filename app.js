@@ -14,7 +14,7 @@ config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL_ONE, process.env.DASHBOARD_URL,"http://localhost:5173"],
+    origin: [process.env.FRONTEND_URL_ONE, process.env.DASHBOARD_URL,"http://localhost:5173","https://healify-hms.netlify.app","https://healify-admin-hms.netlify.app"],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
